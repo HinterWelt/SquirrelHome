@@ -1,3 +1,4 @@
+package SFREST;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
@@ -21,9 +22,9 @@ import sun.net.www.http.HttpClient;
  */
 @WebServlet(name = "oauth", urlPatterns = { "/oauth/*", "/oauth" }, initParams = {
 		// clientId is 'Consumer Key' in the Remote Access UI
-		@WebInitParam(name = "clientId", value = "3MVG9Km_cBLhsuPzTtcGHsZpj9JylyezngYKNi.dNkSQmA0fAdwMD9OzkQEPFDJv1UgVF5tcERKtuiP5Yiin3"),
+		@WebInitParam(name = "clientId", value = "3MVG9QDx8IX8nP5TM98ur77_mysoDbACZHS8NgLhRGlWfR6rpokgwrhVI3a2kTQXUJRS3jv351sYYmhqgDivn"),
 		// clientSecret is 'Consumer Secret' in the Remote Access UI
-		@WebInitParam(name = "clientSecret", value = "6135262856068035680"),
+		@WebInitParam(name = "clientSecret", value = "4174990867618676935"),
 		// This must be identical to 'Callback URL' in the Remote Access UI
 		@WebInitParam(name = "redirectUri", value = "https://localhost:8443/RestTest/oauth/_callback"),
 		@WebInitParam(name = "environment", value = "https://login.salesforce.com") })
