@@ -58,7 +58,8 @@ public class DemoREST extends HttpServlet {
 					System.out.println("Query response: "
 							+ response.toString(2));
 
-					writer.write(response.getString("totalSize")
+//					writer.write(response.getString("totalSize")
+					writer.write(response.getInt("totalSize")
 							+ " record(s) returned\n\n");
 
 					JSONArray results = response.getJSONArray("records");
@@ -158,7 +159,7 @@ public class DemoREST extends HttpServlet {
 					Iterator iterator = response.keys();
 					while (iterator.hasNext()) {
 						String key = (String) iterator.next();
-						String value = response.getString(key);
+						String value = response.optString(key, "Error");
 						writer.write(key + ":" + (value != null ? value : "")
 								+ "\n");
 					}
