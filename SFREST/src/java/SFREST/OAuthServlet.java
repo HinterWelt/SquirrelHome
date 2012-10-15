@@ -15,7 +15,9 @@ import org.apache.commons.httpclient.methods.PostMethod;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-import sun.net.www.http.HttpClient;
+//import sun.net.www.http.HttpClient;
+import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.*;
 
 /**
  * Servlet parameters

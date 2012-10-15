@@ -1,3 +1,4 @@
+package SFREST;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
@@ -158,7 +159,7 @@ public class DemoREST extends HttpServlet {
 					while (iterator.hasNext()) {
 						String key = (String) iterator.next();
 						String value = response.getString(key);
-						writer.write(key + ":" + (value&nbsp;!= null&nbsp;? value&nbsp;: "")
+						writer.write(key + ":" + (value != null ? value : "")
 								+ "\n");
 					}
 
